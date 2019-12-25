@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace q1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter a number: ");
+
+            string xAsString = Console.ReadLine();
+            int x = Convert.ToInt32(xAsString);
+            int i = 2;
+            int sum = 0;
+            int sum1 = 0;
+            sum1++;
+
+            if (x > 0 && x < 1001)
+                {
+                    while (x % i != 0 && i < x)
+                    {
+                        i++;
+                    }
+                    if (i == x)
+                    {
+                        Console.WriteLine("PRIME NUMBER");
+                      
+                    }
+                else if (sum1 ==2)
+                {
+                    sum = sum + x;
+                    sum1++;
+                  
+                }
+                else
+                {
+                        Console.WriteLine("NOT A PRIME NUMBER");
+                }
+            }
+        } 
+    }
+}
